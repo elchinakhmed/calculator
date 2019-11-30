@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <form name="myform">
+            <input type="text" name="display" id="screen"><br />
+            <div class="keys">
+                <div id="key">
+                <input type="button" class="button" id="allclear" name="btnac" value="AC" onclick="ac()">
+                <input type="button" class="button" name="btnc" value="C">
+                <input type="button" class="button" name="btn%" value="%">
+
+                <input type="button" class="button" name="btn7" value="7" onclick="myclick(7)">
+                <input type="button" class="button" name="btn8" value="8" onclick="myclick(8)">
+                <input type="button" class="button" name="btn9" value="9" onclick="myclick(9)">
+
+                <input type="button" class="button" name="btn4" value="4" onclick="myclick(4)">
+                <input type="button" class="button" name="btn5" value="5" onclick="myclick(5)">
+                <input type="button" class="button" name="btn6" value="6" onclick="myclick(6)">
+
+                <input type="button" class="button" name="btn1" value="1" onclick="myclick(1)">
+                <input type="button" class="button" name="btn2" value="2" onclick="myclick(2)">
+                <input type="button" class="button" name="btn3" value="3" onclick="myclick(3)">
+
+                <input type="button" class="button" name="btn0" value="0" onclick="myclick(0)">
+                <input type="button" class="button" name="btn." value="." onclick="myclick('.')">
+                <input type="button" id="eq" class="button" name="btn=" value="=" onclick="equal()">
+            </div>
+                <div class="operation">
+                    <input type="button" class="button" name="btn/" value=":" onclick="myclick('/')">
+                    <input type="button" class="button" name="btnx" value="*" onclick="myclick('*')">
+                    <input type="button" class="button" name="btn-" value="-" onclick="myclick('-')">
+                    <input type="button" class="button" id="plus" name="btn+" value="+" onclick="myclick('+')">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function myclick(a) {
+            myform.display.value += a;
+        }
+        function equal() {
+            myform.display.value = eval(myform.display.value);
+        }
+        function ac() {
+            myform.display.value = "0"
+        }
+    </script>
+
+</body>
+
+</html>

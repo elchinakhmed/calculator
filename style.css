@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+body {
+    background-image: url(cal.jpg);
+}
+#calculator {
+    border: 3px solid #696969;
+    border-radius: 7px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 220px;
+    background-color: #403D3C;
+    padding-bottom: 10px;
+}
+
+#screen {
+    font: 600 1.5em 'Open Sans', sans-serif;
+    color: black;
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    margin-top: 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: #E6E6FA;
+    text-align: right;
+}
+
+.keys {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 15px;
+    background-color: #696969;
+    border-radius: 7px;
+    border: 1px solid #555251;
+    padding-bottom: 10px;
+}
+#key {
+    width: 160px;
+}
+.operation {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    
+}
+
+.button {
+    background-color: #696969;
+    border: 1px solid #5D6061;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    font: 600 1.3em 'Open Sans', sans-serif;
+    color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 5px 0 5px 0;
+    box-shadow: 2px 2px 2px #5D6061;
+}
+.button:hover {
+background-color: #808080;
+}
+#plus {
+    height: 85px;
+}
+#allclear {
+    background-color: #DE7992;
+}
+#allclear:hover {
+    background-color: #DF8BA0;
+}
+#eq {
+    background-color: #C35322;
+}
+#eq:hover {
+    background-color: #C46339;
+}
